@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">KaHiProject</string>
+    <string name="maara">Kuinka monta tupakkaa per päivä?</string>
+    <string name="aski">Kuinka monta tupakkaa askissa?</string>
+    <string name="hinta">Askin hinta?</string>
+    <string name="jatka">JATKA</string>
+    <string name="aloita">Aloita</string>
+    <string name="aloitaalusta">Aloita alusta</string>
+    <string name="cigspassd">Polttamattomat tupakat</string>
+    <string name="lifergnd">Pidentynyt elinaika</string>
+    <string name="tips">Vinkkejä lopettamiseen</string>
+    <string name="health">Terveys</string>
+    <string name="bloodpressure">Kaksi tuntia tupakoinnin lopettamisen jälkeen verenpaineesi, sykkeesi ja ruumiinosien lämpötila palautuu normaalille tasolle</string>
+    <string name="oxygen">Hapen määrä veressäsi normalisoituu 12 tunnin jälkeen</string>
+    <string name="nicotin">Nikotiini on poistunut verenkierrostasi yhden päivän jälkeen</string>
+    <string name="taste">Vaurioittuneet hermopäätteet alkavat uusiutumaan yleensä kahden päivän jälkeen, antaen hitaasti terveen maku- ja hajuaistisi takaisin</string>
+    <string name="breath">Hengittämisen pitäisi olla helpompaa kolmen päivän jälkeen, jolloin keuhkosi aloittavat uusiutumisen</string>
+    <string name="dependence">Neljän päivän jälkeen kehosi nikotiiniriippuvuus on pienentynyt huomattavasti</string>
+    <string name="bloodcirc">Verenkiertosi palautuu normaaliksi 10 päivän jälkeen. Tupakanhimo pitäisi olla harvinaista</string>
+    <string name="insulin">Insuliiniresistenssisi palautuu normaalille tasolle kahden kuukauden jälkeen. Riski sairastua diabetekseen pitäisi olla pienentynyt</string>
+    <string name="diary">Päiväkirja</string>
+</resources>

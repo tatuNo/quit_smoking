@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".StartActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <Chronometer
+            android:id="@+id/chrono"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="140dp"
+            android:layout_marginRight="140dp"
+            android:layout_marginBottom="37dp"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/buttonDiary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/cigsPassed"
+            android:layout_width="298dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="56dp"
+            android:layout_marginRight="56dp"
+            android:onClick="cigsPassed"
+            android:text="@string/cigspassd"
+            android:textColor="@color/buttoncolors"
+            app:layout_constraintBottom_toTopOf="@+id/lifereGained"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/lifereGained"
+            android:layout_width="298dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="56dp"
+            android:layout_marginRight="56dp"
+            android:onClick="liferegained"
+            android:text="@string/lifergnd"
+            android:textColor="@color/buttoncolors"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cigsPassed" />
+
+        <Button
+            android:id="@+id/buttonTips"
+            android:layout_width="156dp"
+            android:layout_height="69dp"
+            android:layout_marginBottom="67dp"
+            android:onClick="tipsPressed"
+            android:text="@string/tips"
+            android:textColor="@color/buttoncolors"
+            app:layout_constraintBottom_toTopOf="@+id/moneysaved"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/buttonHealth"
+            android:layout_width="156dp"
+            android:layout_height="69dp"
+            android:layout_marginBottom="52dp"
+            android:onClick="healthPressed"
+            android:text="@string/health"
+            android:textColor="@color/buttoncolors"
+            app:layout_constraintBottom_toTopOf="@+id/buttonTips"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/buttonDiary"
+            android:layout_width="156dp"
+            android:layout_height="69dp"
+            android:layout_marginBottom="52dp"
+            android:onClick="diaryPressed"
+            android:text="@string/diary"
+            android:textColor="@color/buttoncolors"
+            app:layout_constraintBottom_toTopOf="@+id/buttonHealth"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <RelativeLayout
+            android:id="@+id/achievements"
+            android:layout_width="206dp"
+            android:layout_height="322dp"
+            android:layout_marginBottom="64dp"
+            android:background="@color/relativeLayout"
+            app:layout_constraintBottom_toTopOf="@+id/moneysaved"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="190dp"
+                android:layout_height="33dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="281dp"
+                android:text="    Rahan säästö"
+                android:textAllCaps="false"
+                android:textColor="#FD3A9619"
+                android:textSize="24dp" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="95dp"
+                android:layout_height="56dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="216dp"
+                android:text="\n          1\n    Kuukausi" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="95dp"
+                android:layout_height="54dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="156dp"
+                android:text="\n          1\n      Vuosi" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="95dp"
+                android:layout_height="54dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="34dp"
+                android:text="\n         10\n      Vuotta" />
+
+            <TextView
+                android:id="@+id/onemonth"
+                android:layout_width="95dp"
+                android:layout_height="56dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="216dp"
+                android:text="\n\n" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="95dp"
+                android:layout_height="54dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="95dp"
+                android:text="\n          5\n      Vuotta" />
+
+            <TextView
+                android:id="@+id/oneyear"
+                android:layout_width="95dp"
+                android:layout_height="54dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="156dp"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/fiveyears"
+                android:layout_width="95dp"
+                android:layout_height="54dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="95dp"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/tenyears"
+                android:layout_width="95dp"
+                android:layout_height="54dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="34dp"
+                android:text="TextView" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="211dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="84dp"
+            android:layout_marginRight="84dp"
+            android:layout_marginBottom="10dp"
+            android:text="SAVUTON AIKA"
+            android:textColor="#4AA21E"
+            android:textSize="30sp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toTopOf="@+id/chrono"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/moneysaved"
+            android:layout_width="298dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="56dp"
+            android:layout_marginRight="56dp"
+            android:onClick="moneySaved"
+            android:text="Säästetty raha"
+            android:textColor="@color/buttoncolors"
+            app:layout_constraintBottom_toTopOf="@+id/cigsPassed"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
